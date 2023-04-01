@@ -34,7 +34,7 @@ main {
   text-align: center;
   font-weight: 900;
   color: var(--primary);
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 /* HEADER */
@@ -85,8 +85,7 @@ main {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1.6rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
   transition-property: color;
   transition-duration: 0.3s;
 }
