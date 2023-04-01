@@ -27,12 +27,133 @@ img {
 [class*="contenedor"],
 main {
   width: min(95%, 120rem);
-  margin: 3rem auto;
+  margin: 2rem auto;
 }
 [class*="heading"] {
   font-size: 4rem;
   text-align: center;
   font-weight: 900;
   color: var(--primary);
-  margin: 5rem 0;
+  margin: 3rem 0;
+}
+
+/* HEADER */
+.header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0 0 0 / 0.8),
+      rgba(0 0 0 / 0.5)
+    ),
+    url("/img/header.jpg");
+  padding: 1rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.header .logo {
+  width: 25rem;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.header .navegacion {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .header .navegacion {
+    margin-top: 0;
+  }
+}
+
+.header .navegacion a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.header .navegacion a:hover,
+.header .active {
+  color: var(--primary);
+}
+
+.header .navegacion a:hover,
+.header .active {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--black);
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footer .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer .navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer .navegacion {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.footer .navegacion a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+.footer .navegacion a:hover {
+  color: var(--primary);
+}
+
+.copyright {
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    margin: 0;
+  }
 }
