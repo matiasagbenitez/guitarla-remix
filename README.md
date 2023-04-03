@@ -1,53 +1,38 @@
-# Welcome to Remix!
+# Welcome to GuitarLA!
 
-- [Remix Docs](https://remix.run/docs)
+**GuitarLA** is a Remix Run project for a guitar sales website that allows users to browse guitar listings and add them to a cart. GuitarLA consumes data from an API developed with Strapi, allowing for dynamic and up-to-date guitar listings. The project was created to learn basic concepts of the Remix framework. 
 
-## Development
+![Logo](public/img/logo.svg)
 
-From your terminal:
+## Installation
 
-```sh
-npm run dev
-```
+To install the project's dependencies, make sure you have Node.js and NPM installed on your machine. Then, follow these steps:
 
-This starts your app in development mode, rebuilding assets on file changes.
+1. Clone this repository to your local machine
+2. Open a terminal and navigate to the project directory
+3. Run the command `npm install` to install the dependencies
 
-## Deployment
+## Usage
 
-First, build your app for production:
+Before running the project, make sure you have your API server up and running. You can clone the [Strapi API](https://github.com/matiasagbenitez/guitarla-strapi) with which this project was developed, and start it through the command:
 
-```sh
-npm run build
-```
+`npm run develop`
 
-Then run the app in production mode:
+Once you have installed the dependencies, you can run the server locally. To do this, run the following command in the terminal:
 
-```sh
-npm start
-```
+`npm run dev`
 
-Now you'll need to pick a host to deploy it to.
+This will start the server and open a browser window with the application.
 
-### DIY
+## Gallery
+On the main page, you can see the list of guitars obtained from the API. In the middle section, a promotional banner for a course. In the final part, you will see the list of blog posts.
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+By clicking on the different buttons, you can access the internal pages of the project.
 
-Make sure to deploy the output of `remix build`
+![Inicio](public/img/guitarla-inicio.png)
 
-- `build/`
-- `public/build/`
+You can add products to a cart and keep them thanks to the implementation of localStorage. You can also modify the amount of any of them or also remove one from the list.
 
-### Using a Template
+![Carrito](public/img/guitarla-carrito.png)
 
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+Hope you enjoy the project!!!

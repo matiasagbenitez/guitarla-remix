@@ -53,6 +53,10 @@
 
 .precio {
   font-weight: 700;
+}
+
+.subtotal {
+  font-weight: 700;
   color: var(--primary);
 }
 
@@ -71,12 +75,18 @@
 .btn-eliminar {
   all: unset;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
+  font-weight: 700;
 }
 
 .btn-eliminar:hover {
   color: var(--primary);
+  scale: 1.2;
+}
+
+.cantidad {
+  display: inline;
 }
