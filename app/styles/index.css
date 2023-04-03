@@ -69,6 +69,7 @@ main {
 
 .header .navegacion {
   display: flex;
+  align-items: center;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -90,6 +91,11 @@ main {
   transition-duration: 0.3s;
 }
 
+
+.header .navegacion img {
+  width: 3rem;
+}
+
 .header .navegacion a:hover,
 .header .active {
   color: var(--primary);
@@ -99,6 +105,10 @@ main {
 .header .active {
   color: var(--white);
   background-color: var(--primary);
+}
+
+.header .navegacion a:last-of-type:hover {
+  background-color: transparent;
 }
 
 /* FOOTER */
@@ -136,6 +146,10 @@ main {
   font-weight: 900;
   font-size: 1.8rem;
   padding: 0.5rem;
+}
+
+.footer .navegacion a:last-of-type {
+  display: none;
 }
 
 .footer .navegacion a:hover {

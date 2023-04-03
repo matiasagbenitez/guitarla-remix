@@ -69,3 +69,40 @@
 .guitarra .enlace:hover {
     background-color: var(--primary);
 }
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.formulario select {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--black);
+    border-radius: .5rem;
+    font-size: 1.5rem;
+}
+
+.formulario input[type="submit"] {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
