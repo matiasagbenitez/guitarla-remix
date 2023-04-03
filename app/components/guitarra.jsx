@@ -12,7 +12,6 @@ const Guitarra = ({ guitarra }) => {
             <p className="precio">${precio}</p>
 
             <Link className="enlace" to={`/guitarras/${url}`}>Ver producto</Link>
-            <a className="enlace" href={`/guitarras/${url}`}>Ver producto</a>
         </div>
     </div>
   )

@@ -1,4 +1,4 @@
-import { Meta, Links, Outlet, Scripts, LiveReload } from "@remix-run/react";
+import { Meta, Links, Outlet, Scripts, LiveReload, useCatch } from "@remix-run/react";
 import styles from "~/styles/index.css"; // El símbolo "~"" es un alias para la carpeta app
 import Header from "~/components/header";
 import Footer from "~/components/footer";
@@ -61,5 +61,24 @@ function Document({ children }) {
         <LiveReload />
       </body>
     </html>
-  );
+  )
 }
+
+//! Manejo de errores
+// export function CatchBoundary({ error }) {
+//   return (
+//     <div>
+//       <h1>Error</h1>
+//       <pre>{error.status}</pre>
+//     </div>
+//   )
+// }
+
+// export function ErrorBoundary({ error }) {
+//   return (
+//     <div>
+//       <h1>Error</h1>
+//       <pre>{error.status}</pre>
+//     </div>
+//   )
+// }
