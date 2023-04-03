@@ -1,6 +1,6 @@
 import { useLoaderData } from "@remix-run/react";
 import { getPosts } from "~/models/posts.server";
-import Post from "~/components/post";
+import ListadoPosts from "../components/listadoPosts";
 import styles from "~/styles/blog.css";
 
 export async function loader() {
@@ -21,12 +21,7 @@ const Blog = () => {
 
   return (
     <main className="contenedor">
-      <h2 className="heading">Blog</h2>
-      <div className="blog">
-        {posts.map((post) => (
-          <Post key={post.id} post={post} />
-        ))}
-      </div>
+      <ListadoPosts posts={posts} />
     </main>
   );
 };
